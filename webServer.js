@@ -47,7 +47,7 @@ var app = express();
 // XXX - Your submission should work without this line. Comment out or delete this line for tests and before submission!
 
 
-const uri = 'mongodb://localhost/cs142project6';
+const uri = process.env.MONGODB_URI || 'mongodb://localhost/cs142project6';
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } );
 
 // We have the express static module (http://expressjs.com/en/starter/static-files.html) do all
@@ -248,8 +248,8 @@ app.get('/photosOfUser/:id', function (request, response) {
     });
 });
 
-
-var server = app.listen(3000, function () {
+const port = process.env.PORT || 3000;
+var server = app.listen(port, function () {
     var port = server.address().port;
     console.log('Listening at http://localhost:' + port + ' exporting the directory ' + __dirname);
 });
