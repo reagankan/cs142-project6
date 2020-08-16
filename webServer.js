@@ -48,6 +48,8 @@ var app = express();
 
 
 const uri = process.env.MONGODB_URI || 'mongodb://localhost/cs142project6';
+console.log("uri: ", uri);
+console.log("process.env.MONGODB_URI: ", process.env.MONGODB_URI);
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true } );
 
 // We have the express static module (http://expressjs.com/en/starter/static-files.html) do all
