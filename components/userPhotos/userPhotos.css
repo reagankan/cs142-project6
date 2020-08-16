@@ -1,0 +1,37 @@
+.userPhotos-root{
+	display: block;
+	/*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    overflow: hidden;
+    background-color: black;
+}
+
+.userPhotos-gridList {
+	width: 500;
+	height: 450;
+}
+
+
+
+.userPhotos-icon {
+	color: rgba(255, 255, 255, 0.54)
+}
+
+
+.userPhotos-pageTitle {
+	color: white;
+	text-align: center;
+}
+
+.userPhotos-coverImageBox {
+	display: flex;
+}
+.userPhotos-coverImage {
+    height:300px;
+	flex:1;
+}
+
+.userPhotos-link:hover {
+	background-color: yellow;
+}

@@ -1,0 +1,12 @@
+.userDetail-coverImageBox {
+	display: flex;
+}
+.userDetail-coverImage {
+    height:300px;
+	flex:1;
+	width: none;
+}
+
+.userDetail-cardRoot {
+	min-width: 275;
+}
